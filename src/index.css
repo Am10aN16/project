@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+.App{
+ /* border: 2px solid red; */
+ /* max-width: 950px; */
+ max-height: 501px;
+ padding: 30px;
+ border-radius: 10px;
+ margin: 50px 20px 50px 20px;
+ background-color: #101317;
+
+}
+.types{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin-left: 250px;
+}
+.types p{
+  color: #fff;
+  margin-bottom: 0 !important;
+}
+
+.record .box{
+  background: #1E262F;
+}
+
+
+ul{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 0!important;
+ 
+}
+@media(max-width:750px){
+ .App{
+  max-height: 100%;
+ }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li{
+    margin: 20px 0 11px 0;
+  }
+
+  .types{
+    margin-left: 7px;
+  }
+}
+
+ul li{
+display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 5px 0 5px 0;
+ color: #fff;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 17px;
+
+}
+
+ul li p{
+  margin-bottom:0 ;
+}
+
+.CircularProgressbar-background {
+  fill: green;
+}
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 6.48px;
+	position: relative;
+	margin: 15px 0;
+	height: 9.72px;
+	width: 179.09px;
+}
+
+.progress-done {
+	background: linear-gradient(to left, #F2709C, #FF9472);
+  /* background-color: black; */
+	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
