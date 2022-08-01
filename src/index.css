@@ -4,18 +4,18 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
+  background-color:#1E262F;
 }
 
 
 
 .App{
- /* border: 2px solid red; */
- /* max-width: 950px; */
  max-height: 501px;
  padding: 30px;
  border-radius: 10px;
  margin: 50px 20px 50px 20px;
  background-color: #101317;
+
 
 }
 .types{
@@ -23,14 +23,19 @@
   align-items: flex-end;
   justify-content: space-evenly;
   margin-left: 250px;
+  background-color: #101317;
 }
 .types p{
   color: #fff;
+  background-color: #101317;
   margin-bottom: 0 !important;
 }
 
+
+
 .record .box{
   background: #1E262F;
+ 
 }
 
 
@@ -40,6 +45,7 @@ ul{
   align-items: flex-start;
   justify-content: space-around;
   margin-bottom: 0!important;
+  padding-left: 0 !important;
  
 }
 @media(max-width:750px){
@@ -58,7 +64,7 @@ ul{
   }
 
   .types{
-    margin-left: 7px;
+    margin-left: 18px;
   }
 }
 
@@ -92,9 +98,9 @@ ul li p{
 }
 
 .progress-done {
-	background: linear-gradient(to left, #F2709C, #FF9472);
+	/* background: linear-gradient(to left, #F2709C, #FF9472); */
   /* background-color: black; */
-	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+	box-shadow: 0 3px 3px -5px #F45C84, 0 2px 5px #F45C84;
 	border-radius: 20px;
 	color: #fff;
 	display: flex;
@@ -104,4 +110,17 @@ ul li p{
 	width: 0;
 	opacity: 0;
 	transition: 1s ease 0.3s;
+}
+
+.box ul li .CircularProgressbar-path {
+  stroke: #7FD18C;
+}
+.box ul li .CircularProgressbar-trail {
+  stroke: #ddd;
+}
+.box ul li .CircularProgressbar-text {
+  fill: white;
+}
+.box ul li .CircularProgressbar-background {
+  fill: #7FD18C;
 }
